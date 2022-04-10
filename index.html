@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Board -->
+  <div class="board">
+  
+    <!--Component 1 -->
+    <div class="note board__note">
+      <!-- <div class="banner"> -->
+       <!--Screen Header -->
+       <p class="screenHeader">Screen</p>
+      
+       <!--Screen -->
+       <p class="statement board__note--statement"></p>
+      <!-- </div> -->
+    </div>
+
+    <!--Component 2 -->
+    <div class="calculator">
+
+      <!-- Name  -->
+      <div class="nameDiv calculator__fullNameDiv utilityDev">
+        <label for="text" class="fullName calculator__fullNameDiv--fullNameLabel">Text:</label>
+        <input type="text" value="" class="getTheValue1 calculator__fullNameDiv--fullNameInput fullName" placeholder="Enter here..."/>
+      </div>
+      
+      <!-- Font-Size  -->
+      <div class="fontSizeDiv calculator__fontSizeDev utilityDev">
+        <label for="text" class="fontSize calculator__fontSizeDev--fontSizeLabel">Font Size:  </label>
+        <input type="text" value="" class="getTheValue2 calculator__fontSizeDev--fontSizeInput fontSize" placeholder="Enter here..."/>
+      </div>
+      
+      <!-- Font-Family  -->
+      <div class="fontsDiv calculator__fontFamilyDiv utilityDev">
+        <label for="fonts" class="fontFamily calculator__fontFamilyDiv--label">Font Style:</label>
+        <select name="font-family" class="font-family calculator__fontFamilyDiv--select fontFamily" style="color: rgb(121, 121, 121); background-color: white;">
+               <option value="serif">serif</option>
+               <option value="sans-serif">sans-serif</option>
+               <option value="monospace">monospace</option>
+               <option value="cursive">cursive</option>
+               <option value="fantasy">fantasy</option>
+        </select> 
+      </div>
+      
+      <!-- Skew  -->
+      <div class="skewDiv calculator__skewDiv utilityDev">
+        <label for="text" class="skewXY calculator__skewDiv--label">Skew Value:</label>
+        <input type="text" value="" class="skewValue calculator__skewDiv--input skewXY" placeholder="Enter here..."/>
+      </div>
+      
+      <!-- Button  -->
+      <div class="buttonDiv">
+        <button type="submit" value="Submit" class="buttonDiv__submit calculator__button" onclick="applyChanges()">Apply</button>
+        <button class="buttonDiv__refresh calculator__button" href="#">Refresh</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

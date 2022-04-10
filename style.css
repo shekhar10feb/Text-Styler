@@ -1,0 +1,188 @@
+/* For mobile resolution */
+:root {
+  --primary-color: rgba(0, 0, 0, 0.9);
+  --primary-main-color: rgb(121, 121, 121);
+  --secondary-color: rgb(51, 51, 51);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  html {
+    font-size: 3vmin;
+  }
+  
+  body {
+    font-family: sans-serif;
+    font-weight: bolder;
+    background: var(--primary-color);
+    box-sizing: border-box;
+  }
+  
+  /* Board */
+  .board {
+    width: 100%;
+    height: 100vh;
+    color: var(--primary-main-color);
+    border: 6px solid transparent;
+  }
+  
+  /* Component 1 */
+  .board__note {
+    max-width: 100%;
+    min-height: 64%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0.2rem;
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+  }
+  
+  /* Screen Header */
+  .screenHeader {
+    position: absolute;
+    font-size: 5rem;
+  }
+  
+  /* Screen */
+  .board__note--statement {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+    background-image: linear-gradient(to right, rgb(0, 250, 0), rgb(253, 249, 2), rgb(253, 52, 2));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: none;
+    color: transparent;
+  }
+  
+  /* Component 2 */
+  .calculator {
+    max-width: 100%;
+    min-height: 34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.2rem;
+    padding: 0.3rem;
+    transform: translate(0%, 0%);
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+  }
+  
+  /* All Div Elements in Component 2 */
+  .calculator>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.1rem;
+  }
+  
+  /* All Labels in Div Under Component 2 */
+  div>label {
+    width: 30%;
+    font-size: 1rem;
+    margin-right: 0.4rem;
+  }
+  
+  /* All Inputs and Select in Div Under Component 2 */
+  div>input, div>select {
+    width: 70%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    margin-bottom: 0.5rem;
+    padding: .2rem;
+  }
+  
+  /* Utility Classes */
+  .utilityDev {
+    min-width: 90%;
+    min-height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Button */
+  .buttonDiv {
+    width: 100%;
+  }
+  
+  .calculator__button {
+    max-width: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.2rem 1.2rem;
+    color: whitesmoke;
+    cursor: pointer;
+    background-color: var(--primary-main-color);
+    margin: 0 1.5rem;
+    border: none;
+    border-radius: 0.3rem;
+  }
+
+
+
+  /* For resolution >= 910px */
+  @media (min-width: 58.875rem) {
+    .board {
+      display: flex;
+      flex-direction: row;
+    }
+    .board__note {
+      width: 60%;
+      min-height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+  
+    .calculator {
+      width: 40%;
+      min-height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.7rem;
+    }
+    
+     .calculator>div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem auto;
+      padding: 0.5rem;
+    }
+    
+    div>label {
+    width: 40%;
+    font-size: 1.2rem;
+    margin-right: 0.4rem;
+  }
+  
+  div>input, .fontsDiv>select {
+    width: 60%;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.2rem;
+    margin-bottom: 0.5rem;
+    padding: .2rem;
+  }
+    
+    .utilityDev {
+      width: 100%;
+      margin: 1rem;
+    }
+  }
